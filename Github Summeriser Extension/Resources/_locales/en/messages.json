@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "Github Summeriser Extension",
+        "message": "Gitsum",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is Github Summeriser Extension. You should tell us what your extension does here.",
+        "message": "Summarise GitHub projects with one click using Apple's on-device Foundation Model.",
         "description": "Description of what the extension does."
     }
 }

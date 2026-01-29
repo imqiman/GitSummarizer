@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Github Summeriser
+//  Gitsum
 //
 //  Created by Shahriyar Nikbin on 1/29/26.
 //

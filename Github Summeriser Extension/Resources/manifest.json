@@ -21,13 +21,15 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "*://github.com/*" ],
+        "run_at": "document_idle"
     }],
 
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "images/toolbar-icon.svg"
+        "default_icon": "images/toolbar-icon.svg",
+        "default_title": "__MSG_extension_name__"
     },
 
-    "permissions": [ ]
+    "permissions": [ "activeTab", "nativeMessaging" ]
 }

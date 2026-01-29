@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Github Summeriser
+//  Gitsum
 //
 //  Created by Shahriyar Nikbin on 1/29/26.
 //
@@ -9,7 +9,7 @@ import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "TiTiBooL.Github-Summeriser.Extension"
+let extensionBundleIdentifier = "TiTiBooL.Gitsum.Extension"
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
 

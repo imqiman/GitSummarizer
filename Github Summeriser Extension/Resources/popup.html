@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gitsum</title>
     <link rel="stylesheet" href="popup.css">
-    <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <div id="app">
+        <header class="header">
+            <div class="header-brand">
+                <span class="header-logo" aria-hidden="true">◇</span>
+                <h1 class="title">Gitsum</h1>
+            </div>
+            <p class="subtitle">Summarise & chat about any GitHub repo</p>
+        </header>
+
+        <div id="state-not-github" class="state state-empty" hidden>
+            <div class="empty-icon" aria-hidden="true">↗</div>
+            <p class="empty-title">Not on a repo</p>
+            <p class="empty-desc">Open a GitHub repo page, then open Gitsum again.</p>
+            <code class="empty-hint">github.com/owner/repo</code>
+        </div>
+
+        <div id="state-no-content" class="state state-empty" hidden>
+            <div class="empty-icon" aria-hidden="true">📄</div>
+            <p class="empty-title">No content found</p>
+            <p class="empty-desc">Make sure you’re on the main repo page with a README.</p>
+        </div>
+
+        <div id="state-ready" class="state" hidden>
+            <div class="repo-card">
+                <span class="repo-label">Repository</span>
+                <p id="repo-name" class="repo-name"></p>
+            </div>
+            <button id="btn-summarise" type="button" class="btn btn-primary btn-cta">
+                <span class="btn-icon">◆</span>
+                Summarise with Apple Intelligence
+            </button>
+        </div>
+
+        <div id="state-loading" class="state state-loading" hidden>
+            <div class="spinner" aria-hidden="true"></div>
+            <p class="loading-text">Summarising…</p>
+        </div>
+
+        <div id="state-result" class="state state-result" hidden>
+            <div class="result-toolbar">
+                <span class="result-label">Summary</span>
+                <div class="result-actions">
+                    <button id="btn-copy" type="button" class="btn btn-ghost" title="Copy summary">Copy</button>
+                    <button id="btn-again" type="button" class="btn btn-ghost" title="New summary">Again</button>
+                </div>
+            </div>
+            <div id="summary-text" class="summary-text"></div>
+            <section class="chat-section" aria-label="Chat about this project">
+                <h3 class="chat-heading">
+                    <span class="chat-heading-dot"></span>
+                    Chat
+                </h3>
+                <div id="chat-messages" class="chat-messages" role="log"></div>
+                <div id="chat-empty" class="chat-empty">Ask anything about this project</div>
+                <div class="chat-input-row">
+                    <textarea id="chat-input" class="chat-input" rows="2" placeholder="e.g. How do I install this?" aria-label="Your message"></textarea>
+                    <button id="btn-chat-send" type="button" class="btn btn-primary btn-chat-send" aria-label="Send">
+                        <span class="btn-send-icon">→</span>
+                    </button>
+                </div>
+                <div id="chat-loading" class="chat-loading" hidden>
+                    <span class="chat-loading-dots"><span></span><span></span><span></span></span>
+                    <span class="chat-loading-text">Thinking…</span>
+                </div>
+            </section>
+        </div>
+
+        <div id="state-error" class="state state-error" hidden>
+            <div class="error-icon" aria-hidden="true">!</div>
+            <h2 class="error-title">Something went wrong</h2>
+            <p id="error-message" class="error-message"></p>
+            <button id="btn-retry" type="button" class="btn btn-primary">Try again</button>
+        </div>
+    </div>
+    <script type="module" src="popup.js"></script>
 </body>
 </html>
