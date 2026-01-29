@@ -29,7 +29,3 @@ A Safari extension that summarises GitHub projects and lets you chat about them 
 
 - **Gitsum** (main app) – Host app that ships the extension and shows extension status.
 - **Gitsum Extension** – Safari Web Extension: content script (GitHub), popup (summary + chat), native handler (Apple Foundation Models).
-
-## License
-
-Copyright © Qi Public 2026. All rights reserved.
