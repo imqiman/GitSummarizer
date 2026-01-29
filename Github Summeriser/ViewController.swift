@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Gitsum
+//  GitSummarizer
 //
 //  Created by Shahriyar Nikbin on 1/29/26.
 //
@@ -9,7 +9,7 @@ import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "TiTiBooL.Gitsum.Extension"
+let extensionBundleIdentifier = "TiTiBooL.GitSummarizer.Extension"
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
 

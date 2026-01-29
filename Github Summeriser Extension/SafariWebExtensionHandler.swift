@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  Gitsum Extension
+//  GitSummarizer Extension
 //
 //  Handles native messages from the Safari extension and uses Apple Foundation
 //  Models (Apple Intelligence) to summarise GitHub project content.
@@ -20,13 +20,13 @@ private func summarizeWithFoundationModels(_ content: String) async throws -> St
     case .available:
         break
     case .unavailable(.deviceNotEligible):
-        throw NSError(domain: "Gitsum", code: 1, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is not available on this device."])
+        throw NSError(domain: "GitSummarizer", code: 1, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is not available on this device."])
     case .unavailable(.appleIntelligenceNotEnabled):
-        throw NSError(domain: "Gitsum", code: 2, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is available but not enabled. Turn it on in System Settings."])
+        throw NSError(domain: "GitSummarizer", code: 2, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is available but not enabled. Turn it on in System Settings."])
     case .unavailable(.modelNotReady):
-        throw NSError(domain: "Gitsum", code: 3, userInfo: [NSLocalizedDescriptionKey: "The model isn’t ready. Try again in a moment."])
+        throw NSError(domain: "GitSummarizer", code: 3, userInfo: [NSLocalizedDescriptionKey: "The model isn’t ready. Try again in a moment."])
     case .unavailable:
-        throw NSError(domain: "Gitsum", code: 4, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is unavailable."])
+        throw NSError(domain: "GitSummarizer", code: 4, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is unavailable."])
     }
 
     let session = LanguageModelSession(instructions: """
@@ -46,13 +46,13 @@ private func chatWithFoundationModels(content: String, conversation: [[String: A
     case .available:
         break
     case .unavailable(.deviceNotEligible):
-        throw NSError(domain: "Gitsum", code: 1, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is not available on this device."])
+        throw NSError(domain: "GitSummarizer", code: 1, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is not available on this device."])
     case .unavailable(.appleIntelligenceNotEnabled):
-        throw NSError(domain: "Gitsum", code: 2, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is available but not enabled. Turn it on in System Settings."])
+        throw NSError(domain: "GitSummarizer", code: 2, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is available but not enabled. Turn it on in System Settings."])
     case .unavailable(.modelNotReady):
-        throw NSError(domain: "Gitsum", code: 3, userInfo: [NSLocalizedDescriptionKey: "The model isn’t ready. Try again in a moment."])
+        throw NSError(domain: "GitSummarizer", code: 3, userInfo: [NSLocalizedDescriptionKey: "The model isn’t ready. Try again in a moment."])
     case .unavailable:
-        throw NSError(domain: "Gitsum", code: 4, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is unavailable."])
+        throw NSError(domain: "GitSummarizer", code: 4, userInfo: [NSLocalizedDescriptionKey: "Apple Intelligence is unavailable."])
     }
 
     var conversationBlock = ""

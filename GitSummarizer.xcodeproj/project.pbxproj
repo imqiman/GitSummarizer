@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00405D52F2C0FDB0088C3F6 /* Gitsum Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A00405D42F2C0FDB0088C3F6 /* Gitsum Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A00405D52F2C0FDB0088C3F6 /* GitSummarizer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A00405D42F2C0FDB0088C3F6 /* GitSummarizer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A00406982F2C122F0088C3F6 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = A00406972F2C122F0088C3F6 /* AppIcon.icon */; };
 		A00406992F2C122F0088C3F6 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = A00406972F2C122F0088C3F6 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A00405D52F2C0FDB0088C3F6 /* Gitsum Extension.appex in Embed Foundation Extensions */,
+				A00405D52F2C0FDB0088C3F6 /* GitSummarizer Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,18 +37,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A00405BA2F2C0FD90088C3F6 /* Gitsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gitsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A00405D42F2C0FDB0088C3F6 /* Gitsum Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gitsum Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00405BA2F2C0FD90088C3F6 /* GitSummarizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitSummarizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00405D42F2C0FDB0088C3F6 /* GitSummarizer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GitSummarizer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00406972F2C122F0088C3F6 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A00405ED2F2C0FDB0088C3F6 /* Exceptions for "Github Summeriser Extension" folder in "Gitsum Extension" target */ = {
+		A00405ED2F2C0FDB0088C3F6 /* Exceptions for "Github Summeriser Extension" folder in "GitSummarizer Extension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = A00405D32F2C0FDB0088C3F6 /* Gitsum Extension */;
+			target = A00405D32F2C0FDB0088C3F6 /* GitSummarizer Extension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -61,7 +61,7 @@
 		A00405D82F2C0FDB0088C3F6 /* Github Summeriser Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A00405ED2F2C0FDB0088C3F6 /* Exceptions for "Github Summeriser Extension" folder in "Gitsum Extension" target */,
+				A00405ED2F2C0FDB0088C3F6 /* Exceptions for "Github Summeriser Extension" folder in "GitSummarizer Extension" target */,
 			);
 			explicitFolders = (
 				Resources/_locales,
@@ -103,8 +103,8 @@
 		A00405BB2F2C0FD90088C3F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A00405BA2F2C0FD90088C3F6 /* Gitsum.app */,
-				A00405D42F2C0FDB0088C3F6 /* Gitsum Extension.appex */,
+				A00405BA2F2C0FD90088C3F6 /* GitSummarizer.app */,
+				A00405D42F2C0FDB0088C3F6 /* GitSummarizer Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A00405B92F2C0FD90088C3F6 /* Gitsum */ = {
+		A00405B92F2C0FD90088C3F6 /* GitSummarizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A00405F42F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "Gitsum" */;
+			buildConfigurationList = A00405F42F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "GitSummarizer" */;
 			buildPhases = (
 				A00405B62F2C0FD90088C3F6 /* Sources */,
 				A00405B72F2C0FD90088C3F6 /* Frameworks */,
@@ -129,16 +129,16 @@
 			fileSystemSynchronizedGroups = (
 				A00405BC2F2C0FD90088C3F6 /* Github Summeriser */,
 			);
-			name = Gitsum;
+			name = GitSummarizer;
 			packageProductDependencies = (
 			);
 			productName = "Github Summeriser";
-			productReference = A00405BA2F2C0FD90088C3F6 /* Gitsum.app */;
+			productReference = A00405BA2F2C0FD90088C3F6 /* GitSummarizer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A00405D32F2C0FDB0088C3F6 /* Gitsum Extension */ = {
+		A00405D32F2C0FDB0088C3F6 /* GitSummarizer Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A00405EE2F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "Gitsum Extension" */;
+			buildConfigurationList = A00405EE2F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "GitSummarizer Extension" */;
 			buildPhases = (
 				A00405D02F2C0FDB0088C3F6 /* Sources */,
 				A00405D12F2C0FDB0088C3F6 /* Frameworks */,
@@ -151,11 +151,11 @@
 			fileSystemSynchronizedGroups = (
 				A00405D82F2C0FDB0088C3F6 /* Github Summeriser Extension */,
 			);
-			name = "Gitsum Extension";
+			name = "GitSummarizer Extension";
 			packageProductDependencies = (
 			);
 			productName = "Github Summeriser Extension";
-			productReference = A00405D42F2C0FDB0088C3F6 /* Gitsum Extension.appex */;
+			productReference = A00405D42F2C0FDB0088C3F6 /* GitSummarizer Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A00405B52F2C0FD90088C3F6 /* Build configuration list for PBXProject "Gitsum" */;
+			buildConfigurationList = A00405B52F2C0FD90088C3F6 /* Build configuration list for PBXProject "GitSummarizer" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -190,8 +190,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A00405B92F2C0FD90088C3F6 /* Gitsum */,
-				A00405D32F2C0FDB0088C3F6 /* Gitsum Extension */,
+				A00405B92F2C0FD90088C3F6 /* GitSummarizer */,
+				A00405D32F2C0FDB0088C3F6 /* GitSummarizer Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -235,7 +235,7 @@
 /* Begin PBXTargetDependency section */
 		A00405D72F2C0FDB0088C3F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A00405D32F2C0FDB0088C3F6 /* Gitsum Extension */;
+			target = A00405D32F2C0FDB0088C3F6 /* GitSummarizer Extension */;
 			targetProxy = A00405D62F2C0FDB0088C3F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -252,7 +252,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Github Summeriser Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Gitsum;
+				INFOPLIST_KEY_CFBundleDisplayName = GitSummarizer;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -267,7 +267,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.Gitsum.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.GitSummarizer.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -289,7 +289,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Github Summeriser Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Gitsum;
+				INFOPLIST_KEY_CFBundleDisplayName = GitSummarizer;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,7 +304,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.Gitsum.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.GitSummarizer.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -449,7 +449,7 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Gitsum;
+				INFOPLIST_KEY_CFBundleDisplayName = GitSummarizer;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -464,7 +464,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.Gitsum;
+				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.GitSummarizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -490,7 +490,7 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Gitsum;
+				INFOPLIST_KEY_CFBundleDisplayName = GitSummarizer;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -505,7 +505,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.Gitsum;
+				PRODUCT_BUNDLE_IDENTIFIER = TiTiBooL.GitSummarizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -520,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A00405B52F2C0FD90088C3F6 /* Build configuration list for PBXProject "Gitsum" */ = {
+		A00405B52F2C0FD90088C3F6 /* Build configuration list for PBXProject "GitSummarizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A00405F12F2C0FDB0088C3F6 /* Debug */,
@@ -529,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A00405EE2F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "Gitsum Extension" */ = {
+		A00405EE2F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "GitSummarizer Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A00405EF2F2C0FDB0088C3F6 /* Debug */,
@@ -538,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A00405F42F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "Gitsum" */ = {
+		A00405F42F2C0FDB0088C3F6 /* Build configuration list for PBXNativeTarget "GitSummarizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A00405F52F2C0FDB0088C3F6 /* Debug */,

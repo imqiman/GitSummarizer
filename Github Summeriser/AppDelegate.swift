@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Gitsum
+//  GitSummarizer
 //
 //  Created by Shahriyar Nikbin on 1/29/26.
 //

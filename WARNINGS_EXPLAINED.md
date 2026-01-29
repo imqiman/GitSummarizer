@@ -1,12 +1,12 @@
-# Gitsum – Console Warnings Explained
+# GitSummarizer – Console Warnings Explained
 
-When you run Gitsum, you may see several console messages. Here’s what they mean and what (if anything) to do.
+When you run GitSummarizer, you may see several console messages. Here’s what they mean and what (if anything) to do.
 
 ---
 
 ## 1. Internal inconsistency in menus
 
-**What it says:** The “Gitsum” and “Help” menus believe their parent is “Main Menu”, but Main Menu doesn’t appear to list them as items.
+**What it says:** The “GitSummarizer” and “Help” menus believe their parent is “Main Menu”, but Main Menu doesn’t appear to list them as items.
 
 **Cause:** AppKit sometimes builds the menu bar before the storyboard’s menu items are fully attached, so a consistency check fails even though the menus work.
 
@@ -24,7 +24,7 @@ When you run Gitsum, you may see several console messages. Here’s what they me
 
 **Cause:** The system (and possibly the Foundation Models framework) is checking Apple Intelligence / “Greymatter” eligibility. These logs come from system frameworks, not from your app code.
 
-**What to do:** Nothing. You can’t fix or silence these. They don’t affect Gitsum’s behaviour.
+**What to do:** Nothing. You can’t fix or silence these. They don’t affect GitSummarizer’s behaviour.
 
 ---
 
@@ -67,4 +67,4 @@ So the WebContent process logs “connection invalid” or “permission denied�
 | WebContent / pboard / XPC / sandbox | None | No |
 | Other WebContent / system | None          | No |
 
-None of these indicate a bug in your code. Gitsum and the Safari extension should behave normally; you can treat these as console noise.
+None of these indicate a bug in your code. GitSummarizer and the Safari extension should behave normally; you can treat these as console noise.

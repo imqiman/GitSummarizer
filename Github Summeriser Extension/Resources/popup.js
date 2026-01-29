@@ -1,9 +1,9 @@
 /**
- * Gitsum – popup script
+ * GitSummarizer – popup script
  * Gets project content from the active tab and requests a summary from the native app (Apple Foundation Model).
  */
 
-const HOST_APP_ID = 'TiTiBooL.Gitsum';
+const HOST_APP_ID = 'TiTiBooL.GitSummarizer';
 
 const states = {
   notGitHub: 'state-not-github',
@@ -95,7 +95,7 @@ function runSummarise() {
     })
     .catch(err => {
       document.getElementById('error-message').textContent =
-        err?.message || 'Could not reach the app. Make sure Gitsum app is running and Apple Intelligence is available (macOS 26+).';
+        err?.message || 'Could not reach the app. Make sure GitSummarizer app is running and Apple Intelligence is available (macOS 26+).';
       showState(states.error);
     });
 }
@@ -122,7 +122,7 @@ function renderChatMessages() {
     div.setAttribute('role', 'article');
     const label = document.createElement('div');
     label.className = 'sender';
-    label.textContent = role === 'user' ? 'You' : 'Gitsum';
+    label.textContent = role === 'user' ? 'You' : 'GitSummarizer';
     div.appendChild(label);
     const text = document.createElement('div');
     text.textContent = content;
@@ -165,7 +165,7 @@ function sendChatMessage() {
       setChatLoading(false);
       conversation.push({
         role: 'assistant',
-        content: err?.message || 'Could not reach the app. Make sure Gitsum is running and Apple Intelligence is available.'
+        content: err?.message || 'Could not reach the app. Make sure GitSummarizer is running and Apple Intelligence is available.'
       });
       renderChatMessages();
     });

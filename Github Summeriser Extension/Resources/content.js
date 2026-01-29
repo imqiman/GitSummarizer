@@ -1,5 +1,5 @@
 /**
- * Gitsum – content script
+ * GitSummarizer – content script
  * Extracts repo metadata and README from GitHub repo pages for summarisation.
  */
 
