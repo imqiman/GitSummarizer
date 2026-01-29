@@ -75,14 +75,11 @@ body {
 }
 
 .header-logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 28px;
     height: 28px;
-    font-size: 14px;
-    color: var(--primary);
-    background: var(--primary-soft);
+    flex-shrink: 0;
+    object-fit: contain;
     border-radius: var(--radius-sm);
 }
 

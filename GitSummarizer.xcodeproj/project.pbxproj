@@ -93,9 +93,9 @@
 		A00405B12F2C0FD90088C3F6 = {
 			isa = PBXGroup;
 			children = (
+				A00405BB2F2C0FD90088C3F6 /* Products */,
 				A00405BC2F2C0FD90088C3F6 /* Github Summeriser */,
 				A00405D82F2C0FDB0088C3F6 /* Github Summeriser Extension */,
-				A00405BB2F2C0FD90088C3F6 /* Products */,
 				A00406972F2C122F0088C3F6 /* AppIcon.icon */,
 			);
 			sourceTree = "<group>";
@@ -450,6 +450,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = GitSummarizer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -491,6 +492,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = GitSummarizer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
