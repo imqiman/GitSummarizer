@@ -1,18 +1,18 @@
 {
   "fill" : {
-    "automatic-gradient" : "display-p3:0.94032,0.94342,1.00000,1.00000"
+    "automatic-gradient" : "srgb:1.00000,1.00000,1.00000,1.00000"
   },
   "groups" : [
     {
       "layers" : [
         {
-          "image-name" : "c44b3b63-eb76-45b1-b854-e2000a5cf06f.png",
-          "name" : "c44b3b63-eb76-45b1-b854-e2000a5cf06f",
+          "image-name" : "gitsum.png",
+          "name" : "gitsum",
           "position" : {
-            "scale" : 0.35,
+            "scale" : 0.9,
             "translation-in-points" : [
-              21.350000000000136,
-              54.950000000000045
+              0,
+              -40.875
             ]
           }
         }

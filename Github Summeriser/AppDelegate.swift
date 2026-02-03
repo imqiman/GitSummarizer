@@ -100,7 +100,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
         NSApp.orderFrontStandardAboutPanel(options: [
             NSApplication.AboutPanelOptionKey.credits: "Safari extension to summarise and chat about GitHub repos with Apple Intelligence.",
-            NSApplication.AboutPanelOptionKey(rawValue: "Copyright"): "Copyright © 2025. All rights reserved."
+            NSApplication.AboutPanelOptionKey(rawValue: "Copyright"): "Copyright © 2026. All rights reserved."
         ])
     }
 

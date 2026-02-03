@@ -7,7 +7,7 @@ Use this checklist before submitting GitSummarizer to the Mac App Store.
 ## 1. Code & configuration (done in this pass)
 
 - [x] **Bundle IDs** – Main app: `TiTiBooL.GitSummarizer`, Extension: `TiTiBooL.GitSummarizer.Extension`. Popup and ViewController reference these correctly.
-- [x] **Copyright** – `NSHumanReadableCopyright` set to "Copyright © 2025. All rights reserved." (update year/name in Xcode if needed).
+- [x] **Copyright** – `NSHumanReadableCopyright` set to "Copyright © 2026. All rights reserved." (update year/name in Xcode if needed).
 - [x] **Debug logging** – `console.log` removed from extension background script.
 
 ---
@@ -48,7 +48,7 @@ Use this checklist before submitting GitSummarizer to the Mac App Store.
 - [ ] **Keywords** – e.g. github, summarise, safari extension, apple intelligence.
 - [ ] **Category** – e.g. Developer Tools.
 - [ ] **Screenshots** – At least one macOS screenshot (Safari with a GitHub repo + GitSummarizer popup open). Required sizes: see [App Store screenshot specs](https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).
-- [ ] **Copyright** – Same as in the app (e.g. “Copyright © 2025. All rights reserved.”).
+- [ ] **Copyright** – Same as in the app (e.g. “Copyright © 6. All rights reserved.”).
 
 ---
 
@@ -73,7 +73,7 @@ Use this checklist before submitting GitSummarizer to the Mac App Store.
 
 - [ ] **Test** – Install the archived build, enable the extension in Safari, open a GitHub repo, run summarise and chat. Confirm no crashes and correct behaviour.
 - [ ] **Privacy policy** – URL added in App Store Connect and linked from your policy page.
-- [ ] **Copyright year** – Update “2025” in the app and in App Store Connect if needed.
+- [ ] **Copyright year** – Update “2026” in the app and in App Store Connect if needed.
 
 ---
 
@@ -84,6 +84,6 @@ Use this checklist before submitting GitSummarizer to the Mac App Store.
 | Main app bundle ID| `TiTiBooL.GitSummarizer`                      |
 | Extension bundle ID | `TiTiBooL.GitSummarizer.Extension`          |
 | Native messaging (popup) | Host app: `TiTiBooL.GitSummarizer`   |
-| Copyright         | Copyright © 2025. All rights reserved. |
+| Copyright         | Copyright © 2026. All rights reserved. |
 
 After completing the unchecked items above, you’re ready to submit GitSummarizer for App Store review.

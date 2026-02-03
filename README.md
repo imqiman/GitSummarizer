@@ -32,4 +32,4 @@ A Safari extension that summarises GitHub projects and lets you chat about them 
 
 ## License
 
-Copyright © 2025. All rights reserved.
+Copyright © 2026. All rights reserved.
